@@ -1,0 +1,19 @@
+A interface Map em Java é uma estrutura de dados que associa chaves a valores. Cada chave é única e mapeia para um único valor. Aqui está uma lista de todos os métodos da interface Map:
+
+    void clear(): remove todos os pares de chave-valor do mapa.
+    boolean containsKey(Object key): retorna true se o mapa contém a chave especificada.
+    boolean containsValue(Object value): retorna true se o mapa contém o valor especificado.
+    Set<Map.Entry<K, V>> entrySet(): retorna um conjunto de entradas do mapa.
+    boolean equals(Object o): verifica se o objeto especificado é igual ao mapa.
+    V get(Object key): retorna o valor associado à chave especificada.
+    int hashCode(): retorna o código hash do mapa.
+    boolean isEmpty(): retorna true se o mapa está vazio.
+    Set<K> keySet(): retorna um conjunto de chaves do mapa.
+    V put(K key, V value): associa o valor especificado à chave especificada no mapa.
+    void putAll(Map<? extends K,? extends V> m): associa todos os pares de chave-valor do mapa especificado ao mapa atual.
+    V remove(Object key): remove a entrada associada à chave especificada do mapa e retorna o valor correspondente.
+    int size(): retorna o número de pares de chave-valor no mapa.
+    Collection<V> values(): retorna uma coleção de valores do mapa.
+    default V getOrDefault(Object key, V defaultValue): retorna o valor associado à chave especificada ou um valor padrão se a chave não estiver presente no mapa.
+
+Os métodos entrySet(), keySet(), e values() retornam coleções que permitem iterar sobre as chaves, valores e pares de chave-valor do mapa, respectivamente. A interface Map também define uma interface interna Entry, que representa um par de chave-valor e é usada em conjunção com o método entrySet().
